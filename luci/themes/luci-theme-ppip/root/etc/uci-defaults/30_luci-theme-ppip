@@ -1,0 +1,7 @@
+#!/bin/sh
+uci batch <<-EOF
+	set luci.themes.ppip=/luci-static/ppip
+	set luci.main.mediaurlbase=/luci-static/ppip
+	commit luci
+EOF
+exit 0

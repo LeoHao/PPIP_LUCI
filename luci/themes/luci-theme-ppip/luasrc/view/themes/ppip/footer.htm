@@ -1,0 +1,30 @@
+<%#
+
+  luci-theme-ppip
+      Copyright 2020 LeoHao <bluseamyheart@hotmail.com>
+
+  ppiptheme is an alternative HTML5 theme for LuCI that has evolved from
+  luci-theme-bootstrap & luci-theme-material, in an attempt to bring a more
+  concise, clean and visually pleasing UX to LEDE/OpenWRT.
+
+-%>
+
+<%
+	local disp = require "luci.dispatcher"
+	local request  = disp.context.path
+	local category = request[1]
+	local tree = disp.node()
+%>
+                </div>
+                <footer class="mobile-hide">
+                </footer>
+            </div>
+        </div>
+
+    <script>
+        var luciLocation = <%= luci.http.write_json(luci.dispatcher.context.path) %>;
+    </script>
+    <script src="<%=media%>/js/jquery.min.js"></script>
+    <script src="<%=media%>/js/script.js"></script>
+</body>
+</html>
