@@ -23,7 +23,7 @@ most suited for your case to get it:
 Edit your feeds.conf and add the following to it:
 
     # luci-theme-ppip
-    src-git ppip git://github.com/LeoHao/PPIP_LUCI
+    src-git ppip git://github.com/LeoHao/PPIP_LUCI_THEME
 
 Update your build environment and install the package:
 
